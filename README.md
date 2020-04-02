@@ -45,7 +45,8 @@ A website created with Javascript/JQuery, HTML & CSS to translate user input (nu
 4. Go nuts. 
 
 ## Known Bugs
-* No known bugs at this time.
+* No known bugs with Roman Numeral Converter.
+* With Cryptosquare, if a sentence perfectly fills a box, then it breaks.
 
 ## Technologies Used
 * JQuery
