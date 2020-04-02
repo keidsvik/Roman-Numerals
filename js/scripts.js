@@ -55,7 +55,7 @@ function giveNumber(newNumber) {
     }
   
   
-  console.log(ourResult)  
+  return ourResult
 }
 
 
@@ -63,7 +63,8 @@ $(document).ready(function() {
   $("form#romanNumeralInput").submit(function(event) {
     event.preventDefault();
     var ourNumber = parseInt($("#input").val());
-    giveNumber(ourNumber);
+    var result = giveNumber(ourNumber);
+    $("#resultsDiv").append(result);
   });
 });
 
