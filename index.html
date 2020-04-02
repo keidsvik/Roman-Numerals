@@ -10,53 +10,14 @@
   <title>Roman Numerals</title>
 </head>
 <body>
-  <form id="romanNumeralInput">
-    <label for="input">Please enter a number between 1 and 3,999 to display as a roman numeral</label>
-    <input type="text" class="form-control" id="input">
+  <h1>ROMAN NUMERALS</h1>
+    <div class="container">
+      <form id="romanNumeralInput">
+        <label for="input">Please enter a number between 1 and 3,999 to display as a roman numeral</label>
+        <input type="text" class="form-control" id="input">
 
-    <button type="submit" class="btn">
-  
+        <button type="submit" class="btn">SUBMIT</button>
+      </form>
+    </div>
 </body>
 </html>
-
-
-imagine a loop over a number. Pick a number between 1,000 and 3,000?
-
-1596
-
-Now we loop:
-Is [number] > 1000?
-yes --> prepend M and subtract 1000 from [number]
-
-now, result = "M"
-number that still needs translating: "596"
-is the remainder greater than 500? YES
-subtract 500, and append "D" to results
-
-now result = "MD",
-and we still need to translate "96"
-
-is remainder > 100? NO
-skip this condition
-
-is remainder > 50? YES
-
-subtract 50 from remainder, 
-append "L" to result
-
-result = "MDL"
-remaining number = "46"
-
-is remainder > 10? YES
-append "X" to result
-(Repeat this until remainder < 10)
-
-Result = "MDLXXXX",
-remainder = "6"
-
-....other stuff....
-result = "MDLXXXXVI"
-remainder = 0! Done!
-
-9=IX
-4=IV
