@@ -62,6 +62,7 @@ function giveNumber(newNumber) {
 $(document).ready(function() {
   $("form#romanNumeralInput").submit(function(event) {
     event.preventDefault();
+    $("#resultsDiv").text("");
     var ourNumber = parseInt($("#input").val());
     var result = giveNumber(ourNumber);
     $("#resultsDiv").append(result);
