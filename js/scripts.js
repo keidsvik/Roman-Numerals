@@ -59,18 +59,10 @@ function giveNumber(newNumber) {
 }
 
 
-$(document).ready(function() {
-  $("form#romanNumeralInput").submit(function(event) {
-    event.preventDefault();
-    $("#resultsDiv").text("");
-    var ourNumber = parseInt($("#input").val());
-    var result = giveNumber(ourNumber);
-    $("#resultsDiv").append(result);
-  });
-});
-
 function giveWords(tableWords) {
+  console.log(tableWords.length)
   tableWords.toLowerCase();
+  console.log(tableWords.length)
   var stuffToKeep = ["a","b", "c", "d", "e", "f", "g", "h", "i", "j", "k","l", "m", "n", "o", "p","q", "r", "s", "t", 'u', "v", "x", "y", "z" ];
   for (i = 0; i < tableWords.length; i++){
     if (!(stuffToKeep.includes(tableWords[i]))){
@@ -82,32 +74,45 @@ function giveWords(tableWords) {
   var letterLocation = 0;
   var encoded = "";
   var sentenceLength = tableWords.length;
+  console.log(sentenceLength)
   var longestEdge = Math.ceil(Math.sqrt(tableWords.length));
   var shortestEdge = longestEdge;
+  
   if ((longestEdge * longestEdge) - sentenceLength >= longestEdge){
      shortestEdge = shortestEdge - 1;
   }
-
+console.log(shortestEdge, longestEdge)
   for (i = 0; i < sentenceLength; i++){
     if (i % 5 === 0) {
       encoded = (encoded + " ")
     }
+    console.log(letterLocation, tableWords[letterLocation])
     encoded = (encoded + tableWords[letterLocation]);
     letterLocation = letterLocation + shortestEdge;
-  if (letterLocation > sentenceLength) {
-    letterLocation  = letterLocation - sentenceLength;
+  if (letterLocation >= sentenceLength) {
+    letterLocation = letterLocation - sentenceLength;
   }
   }
-  console.log(encoded)
+  return encoded;
 }
 
-
+$(document).ready(function() {
+  $("form#romanNumeralInput").submit(function(event) {
+    event.preventDefault();
+    $("#resultsDiv").text("");
+    var ourNumber = parseInt($("#input").val());
+    var result = giveNumber(ourNumber);
+    $("#resultsDiv").append(result);
+  });
+});
 
 $(document).ready(function() {
   $("form#squareCodeForm").submit(function(event) {
     event.preventDefault();
+    $("#squareCodeResults").text("");
     var crypto = $("#squareCodeInput").val();
-    giveWords(crypto);
+    var codeResults = giveWords(crypto);
+    $("#squareCodeResults").append(codeResults);
   });
 });
 

@@ -1,5 +1,7 @@
 body {
   font-family: 'IM Fell French Canon SC', serif;
+  background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0695/4768/rcalcutta_marble_grey__shop_preview.png");
+  background-repeat: repeat;
 }
 
 h1 {
