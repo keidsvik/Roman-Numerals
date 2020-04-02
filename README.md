@@ -1,6 +1,6 @@
 # Roman Numeral Converter & Cryptosquare
 
-#### A program that allows users to input ????? 04/02/2020
+#### A program that allows users to input numbers and have them turned into roman numerals. An additional program that returns phrases as cryptosquares. 04/02/2020
 
 #### By **Kelly Eidsvik and Christopher Huber**
 

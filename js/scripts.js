@@ -79,9 +79,10 @@ function giveWords(tableWords) {
     }
     
   }
-  var resultingCode = "";
+  var letterLocation = 0;
+  var encoded = "";
   var sentenceLength = tableWords.length;
-  var longestEdge = Math.ceiling(Math.sqrt(tableWords));
+  var longestEdge = Math.ceil(Math.sqrt(tableWords.length));
   var shortestEdge = longestEdge;
   if ((longestEdge * longestEdge) - sentenceLength >= longestEdge){
      shortestEdge = shortestEdge - 1;
@@ -89,10 +90,15 @@ function giveWords(tableWords) {
 
   for (i = 0; i < sentenceLength; i++){
     if (i % 5 === 0) {
-      res
+      encoded = (encoded + " ")
     }
+    encoded = (encoded + tableWords[letterLocation]);
+    letterLocation = letterLocation + shortestEdge;
+  if (letterLocation > sentenceLength) {
+    letterLocation  = letterLocation - sentenceLength;
   }
-
+  }
+  console.log(encoded)
 }
 
 
