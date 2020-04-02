@@ -1,4 +1,4 @@
-# Pig Latin Translator
+# Roman Numeral Converter & Cryptosquare
 
 #### A program that allows users to input ????? 04/02/2020
 
@@ -6,8 +6,7 @@
 
 ## Description
 
-A website created with Javascript/JQuery and HTML ?????
-
+A website created with Javascript/JQuery, HTML & CSS to translate user input (numbers) into Roman Numerals. An additional input field is there so users can input a phrase and have it returned to them in a cryptosquare.
 
 ### Specs
 | Spec | Input | Output |

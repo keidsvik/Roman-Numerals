@@ -75,10 +75,27 @@ function giveWords(tableWords) {
   for (i = 0; i < tableWords.length; i++){
     if (!(stuffToKeep.includes(tableWords[i]))){
       tableWords = tableWords.replace(tableWords[i], "")
+      i = i - 1;
+    }
+    
+  }
+  var resultingCode = "";
+  var sentenceLength = tableWords.length;
+  var longestEdge = Math.ceiling(Math.sqrt(tableWords));
+  var shortestEdge = longestEdge;
+  if ((longestEdge * longestEdge) - sentenceLength >= longestEdge){
+     shortestEdge = shortestEdge - 1;
+  }
+
+  for (i = 0; i < sentenceLength; i++){
+    if (i % 5 === 0) {
+      res
     }
   }
-  console.log(tableWords);
+
 }
+
+
 
 $(document).ready(function() {
   $("form#squareCodeForm").submit(function(event) {
@@ -87,4 +104,6 @@ $(document).ready(function() {
     giveWords(crypto);
   });
 });
+
+
 
