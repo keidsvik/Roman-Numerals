@@ -69,3 +69,22 @@ $(document).ready(function() {
   });
 });
 
+function giveWords(tableWords) {
+  tableWords.toLowerCase();
+  var stuffToKeep = ["a","b", "c", "d", "e", "f", "g", "h", "i", "j", "k","l", "m", "n", "o", "p","q", "r", "s", "t", 'u', "v", "x", "y", "z" ];
+  for (i = 0; i < tableWords.length; i++){
+    if (!(stuffToKeep.includes(tableWords[i]))){
+      tableWords = tableWords.replace(tableWords[i], "")
+    }
+  }
+  console.log(tableWords);
+}
+
+$(document).ready(function() {
+  $("form#squareCodeForm").submit(function(event) {
+    event.preventDefault();
+    var crypto = $("#squareCodeInput").val();
+    giveWords(crypto);
+  });
+});
+

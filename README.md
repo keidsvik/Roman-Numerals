@@ -24,8 +24,17 @@ A website created with Javascript/JQuery and HTML ?????
 | **If: is the remainder "9"? Yes: special behavior; no: next spec**  | Input: "6" | Output: "MDXC", "6" |
 | **If: is the remainder > "5"? Yes: subtract 5, append "V"; no: next spec** | Input: "6" | Output: "MDXCV", "1" |   
 | **Loop: append "I" for every "1".** | Input: "1" | Output: "MDXCVI" |
-| **Are there four of the same character in a row? Yes: Fix it (see below) No: DONE!** | Input: ????? | Output: ????? |
-
+| 
+:------------------------------------------------------------------------------------------------------------------------
+| Spec | Input | Output |
+| :-------------     | :------------- | :------------- |
+| **Homepage** | User accesses localhost:5004 | Homepage with user input form |
+| **Take an input string from a user and pass it to the backend** | Input: ?? | Output: ?? |
+| **Remove "dead" characters from sentence (commas, spaces, apostrophes, etc)** | Input: ?? | Output: ?? |
+| **Round up from length of string to nearest smallest perfect square** | Input: ?? | Output: ?? |
+| **Possibly remove 1 from number of "columns" to find the distance between characters for output sentence**
+| **Encode words by taking the index of current letter + (number of columns)**
+|
 
 
 
