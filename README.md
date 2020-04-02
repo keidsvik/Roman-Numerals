@@ -1,0 +1,49 @@
+# Pig Latin Translator
+
+#### A program that allows users to input ????? 04/02/2020
+
+#### By **Kelly Eidsvik and Christopher Huber**
+
+## Description
+
+A website created with Javascript/JQuery and HTML ?????
+
+
+### Specs
+| Spec | Input | Output |
+| :-------------     | :------------- | :------------- |
+| **Homepage** | User accesses localhost:5004 | Homepage with user input form |
+| **?????????.**| User Input: ????| Output: ?????|
+| **?????????** | Input: "?????" | Output: "?????" |
+| **?????????** | Input: "?????" | Output: "?????" |
+| **?????** | Input: "?????" | Output: "??????" |
+| **?????????** | Input: "??????" | Output: "???????" |
+| **???????** 
+
+
+
+## Setup/Installation Requirements
+
+1. Open with GHPages [here].
+2. Clone in terminal.
+3. Open in web browser.
+4. Go nuts. 
+
+## Known Bugs
+* No known bugs at this time.
+
+## Technologies Used
+* JQuery
+* Javascript
+* HTML
+* CSS
+
+## Support and contact details
+
+_Email no one with any questions, comments, or concerns._
+
+### License
+
+*{This software is licensed under the MIT license}*
+
+Copyright (c) 2020 **_{Christopher Huber, Kelly Eidsvik}_**
